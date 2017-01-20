@@ -45,7 +45,8 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.materials_service_url = "http://localhost:5000"
+  config.material_url = 'http://localhost:5000'
+
 
   config.middleware.use ZipkinTracer::RackHandler, { service_name: "Set Service",
                            service_port: 3000,
