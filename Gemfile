@@ -29,8 +29,8 @@ gem 'swagger-ui_rails'
 gem 'sprockets-rails'
 #gem 'jwt'
 #gem 'cancancan'
-gem 'aker_credentials_gem', path: '/Users/emr/projects/aker_credentials_gem'
-gem 'aker_permission_gem', path: '/Users/emr/projects/aker_permission_gem'
+gem 'aker_credentials_gem', :github => 'sanger/aker-credentials'
+gem 'aker_permission_gem', :github => 'sanger/aker-permission'
 
 
 

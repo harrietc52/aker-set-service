@@ -36,11 +36,11 @@ RSpec.describe Aker::Set, type: :model do
 
   it 'can have an owner' do
     set = create(:aker_set, name: 'jeff')
-    user = create(:user)
-    set.owner_id = user.email
+    email = 'user@here.com'
+    set.owner_id = email
     set.save
     set = Aker::Set.find(set.id)
-    expect(set.owner_id).to eq user.email
+    expect(set.owner_id).to eq email
   end
 
   it 'has permissions' do
